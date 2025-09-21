@@ -4,6 +4,15 @@
       "path": "."
     }
   ],
+  "extensions": {
+    "recommendations": [
+      "vsciot-vscode.vscode-arduino",
+      "ms-vscode.cpptools",
+      "ms-vscode.vscode-serial-monitor",
+      "esbenp.prettier-vscode",
+      "wokwi.wokwi-vscode"
+    ]
+  },
   "settings": {
     "[cpp]": {
       "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -14,30 +23,6 @@
     "[jsonc]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.formatOnSave": true,
-    "profiles":{
-      "ESPviaPIO": {
-        "extensions": {
-          "recommendations": [
-            "vsciot-vscode.vscode-arduino",
-            "ms-vscode.cpptools",
-            "ms-vscode.vscode-serial-monitor",
-            "esbenp.prettier-vscode",
-            "wokwi.wokwi-vscode"
-          ]
-        },
-        "settings": {
-          "arduino.defaultBaudRate": 115200,
-          "arduino.defaultBoard": "esp32:esp32:esp32",
-          "arduino.path": "/home/yourusername/.platformio/penv/bin/arduino-cli",
-          "arduino.additionalUrls": [
-            "https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json"
-          ],
-          "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-          "cmake.configureOnOpen": true
-        }
-      }
-    }
-  },
-  
+    "editor.formatOnSave": true
+  }
 }
